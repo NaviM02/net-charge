@@ -12,7 +12,7 @@ export default function PaymentsPage() {
       </h1>
       <div className="flex items-center">
         <Link 
-          to="/clientes"
+          to="/pagos/nuevo"
           className=""
         >
           Agregar Pago

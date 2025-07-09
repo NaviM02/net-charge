@@ -65,7 +65,7 @@ export function ListOfPayments({ payments }: Props) {
                 <TableCell className='text-center'>{payment.clientId}</TableCell>
                 <TableCell className='text-center'>{monthNames[payment.month]}</TableCell>
                 <TableCell className='text-center'>{payment.year}</TableCell>
-                <TableCell className='text-center'>Q {payment.dueDate.toLocaleDateString()}</TableCell>
+                <TableCell className='text-center'>{payment.dueDate.toLocaleDateString()}</TableCell>
                 <TableCell className='text-center'>{paidDate ? paidDate.toLocaleDateString() : '—'}</TableCell>
                 <TableCell className='text-center'>{paidDate ? paidDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—'}</TableCell>
                 <TableCell className="text-center">Q {payment.amount}</TableCell>
