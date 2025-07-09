@@ -13,7 +13,7 @@ export default function ClientsPage() {
       </h1>
       <div className="flex items-center">
         <Link 
-          to="/clientes"
+          to="/clientes/nuevo"
           className=""
         >
           Agregar cliente

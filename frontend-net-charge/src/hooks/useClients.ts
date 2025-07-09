@@ -61,6 +61,9 @@ export function useClients() {
       prev.map((c) => (c.id === updateClient.id ? updateClient : c))
     );
   }
+  const addClient = (client: Client) => {
+    clients.push(client);
+  }
 
-  return { clients, loading, error, getClient, updateClient };
+  return { clients, loading, error, getClient, updateClient, addClient};
 }
