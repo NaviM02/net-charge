@@ -3,6 +3,7 @@ import LoginPage from "../pages/LoginPage";
 import ClientsPage from "../pages/ClientsPage";
 import ClientDetailPage from "../pages/ClientDetailPage";
 import EmployeesPage from "../pages/EmployeesPage";
+import PaymentsPage from "../pages/PaymentsPage";
 import AssignClientsPage from "../pages/AssignClientsPage";
 import AdminDashboard from "../pages/AdminDashboardPage";
 //import ProtectedRoute from "./ProtectedRoute";
@@ -14,6 +15,8 @@ export default function AppRoutes() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/clientes" element={<ClientsPage />} />
         <Route path="/clientes/:id" element={<ClientDetailPage />} />
+        <Route path="/pagos" element={<PaymentsPage />}/>
+        <Route path="/pagos/:id" element={<PaymentsPage />}/>
         <Route path="/empleados" element={<EmployeesPage />} />
         <Route path="/empleados/:id/asignar-clientes" element={<AssignClientsPage />} />
         <Route path="/admin" element={<AdminDashboard />} />  

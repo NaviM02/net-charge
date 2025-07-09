@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ListOfClients } from "../components/ListOfClients";
 import { useClients } from "../hooks/useClients";
-import "./pages-styles/ClientsPage.css"
 
 export default function ClientsPage() {
   const { clients } = useClients();

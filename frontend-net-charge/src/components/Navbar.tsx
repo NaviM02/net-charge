@@ -20,7 +20,7 @@ export default function Navbar() {
           <li><Link to="/admin">Dashboard</Link></li>
           <li><Link to="/clientes">Clientes</Link></li>
           <li><Link to="/empleados">Empleados</Link></li>
-          <li><Link to="/empleados">Pagos</Link></li>
+          <li><Link to="/pagos">Pagos</Link></li>
         </ul>
       </div>
       <div className="navbar-right">
