@@ -9,16 +9,19 @@ export default function EmployeesPage() {
   return (
     <div className="page pt-6 pl-18 pr-18">
       <h1 className="text-3xl font-bold text-gray-800">
-        Lista de clientes
+        Lista de empleados
       </h1>
-      <div className="flex items-center">
+      <div className="flex items-center my-4">
         <Link 
           to="/empleados/nuevo"
-          className=""
+          className="inline-flex items-center gap-2 px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-blue-400 hover:text-white transition-colors"
         >
           Agregar empleado
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
         </Link>
-        <form className="flex items-center gap-3 mb-6 ml-auto w-fit">
+        <form className="flex items-center gap-3 ml-auto w-fit">
           <input placeholder="Nombre del cliente"
             className="px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent w-64"
           />

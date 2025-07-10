@@ -238,7 +238,6 @@ export function usePayments() {
   };
   const addPayment = (payment: Payment) => {
     payments.push(payment);
-    console.log(payment)
   }
 
   return {
