@@ -8,6 +8,7 @@ import AssignClientsPage from "../pages/AssignClientsPage";
 import AdminDashboard from "../pages/AdminDashboardPage";
 import AddClientPage from "../pages/AddClientPage";
 import AddPaymentPage from "../pages/AddPaymentPage";
+import EmployeeDetailPage from "../pages/EmployeeDetailPage";
 //import ProtectedRoute from "./ProtectedRoute";
 //import AdminRoute from "./AdminRoute";
 
@@ -22,6 +23,7 @@ export default function AppRoutes() {
         <Route path="/pagos/:id" element={<PaymentsPage />}/>
         <Route path="/pagos/nuevo" element={<AddPaymentPage />}/>
         <Route path="/empleados" element={<EmployeesPage />} />
+        <Route path="/empleados/:id" element={<EmployeeDetailPage />} />
         <Route path="/empleados/:id/asignar-clientes" element={<AssignClientsPage />} />
         <Route path="/admin" element={<AdminDashboard />} />  
     </Routes>
