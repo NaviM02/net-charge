@@ -9,6 +9,7 @@ import AdminDashboard from "../pages/AdminDashboardPage";
 import AddClientPage from "../pages/AddClientPage";
 import AddPaymentPage from "../pages/AddPaymentPage";
 import EmployeeDetailPage from "../pages/EmployeeDetailPage";
+import AddEmployeePage from "../pages/AddEmployeePage";
 //import ProtectedRoute from "./ProtectedRoute";
 //import AdminRoute from "./AdminRoute";
 
@@ -24,6 +25,7 @@ export default function AppRoutes() {
         <Route path="/pagos/nuevo" element={<AddPaymentPage />}/>
         <Route path="/empleados" element={<EmployeesPage />} />
         <Route path="/empleados/:id" element={<EmployeeDetailPage />} />
+        <Route path="/empleados/nuevo" element={<AddEmployeePage />} />
         <Route path="/empleados/:id/asignar-clientes" element={<AssignClientsPage />} />
         <Route path="/admin" element={<AdminDashboard />} />  
     </Routes>
